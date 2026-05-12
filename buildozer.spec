@@ -50,7 +50,7 @@ android.permissions = CAMERA,VIBRATE,FLASHLIGHT
 android.api = 33
 
 # 最低支持 Android API（Android 5.0）
-android.minapi = 21
+android.minapi = 24
 
 # Android NDK 版本
 android.ndk = 25b
