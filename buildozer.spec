@@ -1,6 +1,7 @@
 # ========================================
 # AI 智能驱鸟器 - Buildozer 配置文件
 # 用途：打包安卓 APK 用于专利原型测试
+# 优化：移除 PyTorch，使用 OpenCV DNN
 # ========================================
 
 [app]
@@ -18,13 +19,13 @@ package.domain = org.patent
 source.dir = .
 
 # 包含的文件类型
-source.include_exts = py,png,jpg,kv,atlas,json,mp3,wav
+source.include_exts = py,png,jpg,kv,atlas,json,mp3,wav,pb,pbtxt
 
 # 应用版本
 version = 1.0.0
 
-# 依赖库（轻量级配置，适合手机）
-requirements = python3,kivy,opencv-python,torch,pillow,numpy
+# 依赖库（轻量级配置，移除 torch）
+requirements = python3,kivy,opencv-python,pillow,numpy
 
 # 应用图标
 #icon.filename = %(source.dir)s/icon.png
